@@ -1,5 +1,5 @@
 <%@include file="Header.jsp" %>
-<div class="container">
+<div class="cont">
 
 	<div class="row">
 	<div class="col-sm-4">

@@ -1,5 +1,5 @@
 <%@include file="Header.jsp" %>
-<body style="background:url('resources/images/login1.jpg')">
+<body style="background:url('resources/images/s5.jpg')">
 
 <div class="container">
 <centre><h1>LOGIN</h1></centre>

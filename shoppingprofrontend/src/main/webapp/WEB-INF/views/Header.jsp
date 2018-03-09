@@ -13,6 +13,13 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <style>
+  .cont{
+  background-color:#f442d1;
+  }
+  .navbar-brand{
+  font-family:Algerian ;
+  font-size:22;
+  }
   .bg-1 { 
       background-color: #2f2f2f; /* Black Gray */
       color: #fff;
@@ -43,7 +50,7 @@ box-shadow: 0px 0px 18px 9px rgba(0,0,0,0.75);
 </head>
 <body>
 
-<nav class="navbar nav-tab" style="background-color:#f5f6f7; margin:0">
+<nav class="navbar navbar-inverse"  margin:0">
   <div class="container-fluid">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -51,7 +58,7 @@ box-shadow: 0px 0px 18px 9px rgba(0,0,0,0.75);
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
       </button>
-       <a class="navbar-brand" href="#"><span Style="font-family:Comic Sans MS">shoppingpro</span></a>
+       <a class="navbar-brand" href="#"><span Style="font-family:Comic Sans MS">Shopping Pro</span></a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
     

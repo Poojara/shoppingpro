@@ -3,26 +3,26 @@
 
 <div class="container-fluid">
   <div id="myCarousel" class="carousel slide" data-ride="carousel">
-    <!-- Indicators -->
-    <ol class="carousel-indicators">
-      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-      <li data-target="#myCarousel" data-slide-to="1"></li>
-      <li data-target="#myCarousel" data-slide-to="2"></li>
-     </ol>
-
-    <!-- Wrapper for slides -->
-    <div class="carousel-inner">
+        <div class="carousel-inner">
       <div class="item active">
-        <img src="resources/images/topbanner.jpg" alt="Los Angeles" style="height:300px;">
+        <img src="resources/images/s1.jpg" alt="Los Angeles" style="height:300px;">
       </div>
 
       <div class="item">
-        <img src="resources/images/electronic.jpg" alt="Chicago" style="height:300px;">
+        <img src="resources/images/s2.jpg" alt="Chicago" style="height:300px;">
       </div>
     
       <div class="item">
-        <img src="resources/images/90a920.jpg" alt="New york" style="height:300px;">
+        <img src="resources/images/s3.jpg" alt="New york" style="height:300px;">
       </div>
+      <div class="item">
+        <img src="resources/images/s4.jpg" alt="New york" style="height:300px;">
+      </div>
+    
+       <div class="item">
+        <img src="resources/images/s6.jpg" alt="New york" style="height:300px;">
+      </div>
+    
     </div>
     
      
