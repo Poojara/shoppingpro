@@ -6,7 +6,7 @@
   <div class="form-group">
     <label class="control-label col-sm-2" for="name">Name : </label>
     <div class="col-sm-10">
-      <input type="text" class="form-control" name="name" id="name" placeholder="Enter Name">
+      <input type="text" class="form-control" name="name" id="name" placeholder="Enter Name"  required="">
     </div>
   </div>
   <div class="form-group">
@@ -18,7 +18,7 @@
   <div class="form-group">
     <label class="control-label col-sm-2" for="name">Password : </label>
     <div class="col-sm-10">
-      <input type="password" class="form-control" name="password"  id="password" placeholder="Enter Password">
+      <input type="password" class="form-control" name="password"  id="password" placeholder="Enter Password" pattern=".{8,}">
     </div>
   </div>
   <div class="form-group">
@@ -30,7 +30,7 @@
   <div class="form-group">
     <label class="control-label col-sm-2" for="mobile">Mobile : </label>
     <div class="col-sm-10">
-      <input type="text" class="form-control" name="mobile" id="mobile" placeholder="Enter Mobile">
+      <input type="text" class="form-control" name="mobile" id="mobile" placeholder="Enter Mobile" pattern="[6-9]{1}[0-9]{9}" title="please enter a valid number">
     </div>
   </div>
   <div class="form-group">

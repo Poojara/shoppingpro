@@ -96,6 +96,8 @@ box-shadow: 0px 0px 18px 9px rgba(0,0,0,0.75);
         <li><a href="login"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
       </c:if>
       <c:if test='<%=session.getAttribute("loggedin")!=null%>'>
+        <li><a href="${e }cart">Cart</a></li>
+        <li><a href="${e }orders">Orders</a></li>
                    <li><a>Welcome ${user.username}</a></li>
     <li><a href="${e}perform_logout"><span class="glyphicon glyphicon-user"></span> Logout</a></li>
       </c:if></ul>

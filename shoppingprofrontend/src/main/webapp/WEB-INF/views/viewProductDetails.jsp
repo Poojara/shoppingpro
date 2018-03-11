@@ -2,7 +2,7 @@
 <div class="container">
 
  <div class="thumbnail"  >
-<img src="${e}resources/images/${pro.id}.jpg" height="440" width="240"/>
+<img src="${e}resources/proImage/${pro.id}.jpg" height="440" width="240"/>
 </div>
     
 <h3><b>${pro.name}</b></h3>

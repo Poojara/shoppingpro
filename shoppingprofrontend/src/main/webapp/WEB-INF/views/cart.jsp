@@ -13,4 +13,5 @@
   </tr>
 </c:forEach>
 </table>
+<a href="${e }checkout" class="btn btn-primary btn-block">Checkout</a>
 <%@ include file="footer.jsp"%>

@@ -5,14 +5,14 @@
 <div class="col-md-4 col-sm-4 col-xs-12"></div>
 <div class="col-md-4 col-sm-4 col-xs-12"> 
 
-<form action="updateSupplier" method="post" class="form-container">
+<form action="${e }updateSupplier" method="post" class="form-container">
 <h1><span style="color:white;"><b>Add Supplier</b></span></h1>
   <div class="form-group">
     <label for="s_name"><span style="color:#fff">Enter Name</span> </label>
-    <input type="text" class="form-control" id="s_name" placeholder="Enter Name" name="s_name">
-    <input type="hidden" name="s_id"  value="${cat.s_id}">
+    <input type="text" class="form-control" id="s_name" placeholder="Enter Name" name="s_name" value="${sup.s_Name}">
+    <input type="hidden" name="s_id"  value="${sup.s_id}">
   </div>
-  <button type="submit" class="btn btn-success btn-block">login</button>
+  <button type="submit" class="btn btn-success btn-block">Update</button>
 </form>
 
 </div></div></div>

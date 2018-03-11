@@ -23,6 +23,14 @@
         <img src="resources/images/s6.jpg" alt="New york" style="height:300px;">
       </div>
     
+        <div class="item">
+        <img src="resources/images/s9.jpg" alt="New york" style="height:300px;">
+      </div>
+      
+        <div class="item">
+        <img src="resources/images/s10.jpg" alt="New york" style="height:300px;">
+      </div>
+        
     </div>
     
      

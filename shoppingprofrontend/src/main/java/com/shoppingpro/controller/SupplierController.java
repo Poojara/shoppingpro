@@ -19,29 +19,52 @@ import com.shoppingprobackend.modal.Supplier;
 public class SupplierController {
 	@Autowired
 	SupplierDAO supplierDAO;
+	
 	@RequestMapping("/addSupplier")
 	public String addSupplier(){
-	return "addSupplier";
+		return "addSupplier";
 	}
+	
 	@RequestMapping(value="/saveSupplier",method=RequestMethod.POST)
-	public String saveSupplier(@RequestParam String s_Name){
-	Supplier supplier=new Supplier();
-	supplier.setS_Name(s_Name);
-	supplierDAO.addSupplier(supplier);
-	return "redirect:/viewSupplier";
-	}
-	@RequestMapping(value="/deleteSupplier/{cid}")
-	public String deleteSupplier(@PathVariable int sid){
-	Supplier supplier=supplierDAO.getSupplierById(sid);
-	supplierDAO.deleteSupplier(supplier);
-	return "redirect:/viewSupplier";
-	} 
-	@RequestMapping("/viewSupplier")
-	public ModelAndView viewSupplier(){
-	ModelAndView m=new ModelAndView("viewSupplier");
-	List<Supplier> list=supplierDAO.getAllSupplier();
-	m.addObject("supList",list);
-	return m;
+	public String saveSupplier(@RequestParam String s_name){
+		Supplier supplier=new Supplier();
+		supplier.setS_Name(s_name);
+		supplierDAO.addSupplier(supplier);
+		
+		return "redirect:/viewSupplier";
 	}
 
+	@RequestMapping(value="/updateSupplier",method=RequestMethod.POST)
+	public String updateCategory(@RequestParam String s_name,@RequestParam int s_id){
+		Supplier supplier=new Supplier();
+		supplier.setS_Name(s_name);
+		supplier.setS_id(s_id);
+		supplierDAO.updateSupplier(supplier);
+		
+		return "redirect:/viewSupplier";
+	}
+	@RequestMapping(value="/deleteSupplier/{sid}")
+	public String deleteCategory(@PathVariable int sid){
+		Supplier supplier=supplierDAO.getSupplierById(sid);
+		supplierDAO.deleteSupplier(supplier);
+		return "redirect:/viewSupplier";
+	}	
+	
+	@RequestMapping("/viewSupplier")
+	public ModelAndView viewSupplier(){
+		ModelAndView m=new ModelAndView("viewSupplier");
+		List<Supplier> list=supplierDAO.getAllSupplier();
+		m.addObject("supList",list);
+		return m;
+	}
+	@RequestMapping(value="/updateSupplierbyId/{sid}")
+	public ModelAndView updateSupplierById(@PathVariable int sid){
+		Supplier supplier=supplierDAO.getSupplierById(sid);
+		ModelAndView m=new ModelAndView("updateSupplier");
+		m.addObject("sup",supplier);
+		return m;
+	}	
 }
+
+
+

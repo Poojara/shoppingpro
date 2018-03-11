@@ -5,8 +5,8 @@
 <centre><h1>LOGIN</h1></centre>
   <form action="${e }perform_login" method="post">
     <div class="form-group">
-      <label for="email">Email:</label>
-      <input  class="form-control" id="email" placeholder="Enter username" name="username">
+      <label for="name">UserName:</label>
+      <input  class="form-control" id="name" placeholder="Enter username" name="username">
     </div>
     <div class="form-group">
       <label for="pwd">Password:</label>

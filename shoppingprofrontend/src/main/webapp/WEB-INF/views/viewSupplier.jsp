@@ -9,7 +9,7 @@
   <tr>
     <td>${sup.s_id}</td>
     <td>${sup.s_Name}</td>
-    <td><a href="${e}updateSupplierbyId/${sup.s_id}" class="btn btn-primary">update</a><a href="${e}deleteSuplier/${sup.s_id}" class="btn btn-primary">delete</a></td>
+    <td><a href="${e}updateSupplierbyId/${sup.s_id}" class="btn btn-primary">update</a><a href="${e}deleteSupplier/${sup.s_id}" class="btn btn-primary">delete</a></td>
   </tr>
   </c:forEach>
   
