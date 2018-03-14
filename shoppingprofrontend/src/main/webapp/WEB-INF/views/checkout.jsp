@@ -1,4 +1,4 @@
-<%@include file="Header.jsp"%>
+<%@include file=" Header.jsp"%>
 
 <div class="container-fliud"
 	style="background: url('resources/images/register.png');">
@@ -10,7 +10,7 @@
 		<div class="form-group">
 			<label class="control-label col-sm-2" for="name" required="">Name:</label>
 			<div class="col-sm-10">
-				<input type="text" class="form-control" id="name"
+				<input type="text" class="form-control" id="name">
 					placeholder="Enter Name" name="name">
 			</div>
 		</div>
@@ -36,14 +36,14 @@
 			</div>
 		</div>
 		<div class="form-group">
-			<label class="control-label col-sm-2" for="pincode" required=""g>Pincode:</label>
+			<label class="control-label col-sm-2" for="pincode" required="">Pincode:</label>
 			<div class="col-sm-10">
 				<input type="text" class="form-control" id="pincode"
 					placeholder="Enter Pincode" name="pincode">
 			</div>
 		</div>
 		<div class="form-group">
-			<label class="control-label col-sm-2" for="mobile" patter="[6-9]{1}[0-9]{9}" title="please enter a vaolid number">Mobile:</label>
+			<label class="control-label col-sm-2" for="mobile" patter="[6-9]{1}[0-9]{9}" title="please enter a valid number">Mobile:</label>
 			<div class="col-sm-10">
 				<input type="text" class="form-control" id="mobile"
 					placeholder="Enter mobile no." name="mobile">
