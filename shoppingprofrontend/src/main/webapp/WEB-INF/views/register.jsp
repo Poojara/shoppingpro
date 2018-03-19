@@ -1,6 +1,8 @@
 <%@include file="Header.jsp" %>
-<body style="background:url('resources/images/register1.jpg')">
-<div class="container">
+
+
+
+<div class="container-fluid" style=" width:100%;  background-image:url('resources/images/s1.jpg')">
 <center><h2>Registration</h2></center>
 <form class="form-horizontal" action="adduser" method="post">
   <div class="form-group">

@@ -1,7 +1,9 @@
-<%@include file=" Header.jsp"%>
+<%@include file="Header.jsp"%>
 
-<div class="container-fliud"
-	style="background: url('resources/images/register.png');">
+
+
+<div class="container-fluid" style=" width:100%;  background-image:url('resources/images/s1.jpg')">
+
 	<form class="form-horizontal" action="${e}placeOrder" method="post"
 		style="margin-top: 0%; margin-bottom: 0%;">
 		<h1 style="text-align: center; font-family: Forte; color: black;">

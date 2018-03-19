@@ -8,6 +8,7 @@ import org.junit.Test;
 import org.junit.runners.MethodSorters;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
+import com.shoppingprobackend.dao.ProductDAO;
 import com.shoppingprobackend.modal.Product;
 
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
@@ -25,27 +26,32 @@ public class TestProductDAO {
 	}
 	@Test
 	public void testInsertOrUpdateProduct() {
-		fail("Not yet implemented");
-	}
+		ProductDAO ordersDAO=(ProductDAO)context.getBean("ordersDAO");
+		assertEquals(true, ordersDAO.insertOrUpdateProduct(product));	
+		}
 
 	@Test
 	public void testGetProduct() {
-		fail("Not yet implemented");
+		ProductDAO productDAO=(ProductDAO)context.getBean("productDAO");
+		assertNotEquals(null, productDAO.getProduct(product.getId()));
 	}
 
 	@Test
 	public void testGetAllProducts() {
-		fail("Not yet implemented");
+		ProductDAO productDAO=(ProductDAO)context.getBean("productDAO");
+		assertNotEquals(null, productDAO.getAllProducts());
+	
 	}
-
 	@Test
 	public void testGetProductsByCategory() {
-		fail("Not yet implemented");
+		ProductDAO productDAO=(ProductDAO)context.getBean("ordersDAO");
+		assertNotEquals(null, productDAO.getProductsByCategory(product.getCategory().getC_id()));
 	}
 
 	@Test
 	public void testDeleteProduct() {
-		fail("Not yet implemented");
-	}
+		ProductDAO productDAO=(ProductDAO)context.getBean("productDAO");
+		assertEquals(true, productDAO.deleteProduct(product));	
+		}
 
 }

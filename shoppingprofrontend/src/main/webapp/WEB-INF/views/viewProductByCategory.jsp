@@ -1,4 +1,5 @@
 <%@ include file="Header.jsp" %>
+
 <div class="row">
 <c:forEach items="${proList}" var="pro">
   <div class="col-md-4">

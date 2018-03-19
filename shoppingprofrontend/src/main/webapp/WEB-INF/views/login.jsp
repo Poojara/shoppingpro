@@ -1,25 +1,25 @@
+
 <%@include file="Header.jsp" %>
-<body style="background:url('resources/images/s5.jpg')">
 
-<div class="container">
-<centre><h1>LOGIN</h1></centre>
-  <form action="${e }perform_login" method="post">
-    <div class="form-group">
-      <label for="name">UserName:</label>
-      <input  class="form-control" id="name" placeholder="Enter username" name="username"  required=" ">
-    </div>
-    <div class="form-group">
-      <label for="pwd">Password:</label>
-      <input type="password" name="password" class="form-control" id="pwd" placeholder="Enter password"  name="password" patter=".{8, }" requried=" ">
-    </div>
-    <div class="checkbox">
-      <label><input type="checkbox"> Remember me</label>
-    </div>
-    <button type="submit" class="btn btn-default">Submit</button>
-  </form>
-</div>
+<div class="container-fluid" style=" width:100%; height:95vh; repeat:no-repeat; background-image:url('resources/images/s1.jpg') ">
+<div class="row">
+<div class="col-md-4 col-sm-4 col-xs-12"></div>
+<div class="col-md-4 col-sm-4 col-xs-12"> 
 
-</body> 
+<form action="${e}perform_login" method="post" class="form-container">
+<h1><center><b>LOGIN</b></center></h1>
+  <div class="form-group">
+    <label for="email"><span style="color:black;">Username</span> </label>
+    <input required="" type="text" class="form-control" id="email" placeholder="Enter username" name="username">
+  </div>
+    <div class="form-group">
+    <label for="password"><span style="color:black;">Password</span> </label>
+    <input required="" type="password" class="form-control" id="pass" placeholder="password" name="password">
+  </div>
+ 
+  <button type="submit" class="btn btn-success btn-block">login</button>
+</form>
+
+</div></div></div>
+
 <%@include file="footer.jsp" %>
-      
-      

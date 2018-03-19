@@ -12,6 +12,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
   <style>
   .cont{
   background-color:#f442d1;
@@ -43,15 +44,14 @@ box-shadow: 0px 0px 18px 9px rgba(0,0,0,0.75);
       .btn-lg{
       	margin-top:100px;
 		margin-bottom:100px;
-      
       }
       
   </style>
 </head>
 <body>
 
-<nav class="navbar navbar-inverse"  margin:0">
-  <div class="container-fluid">
+<nav class="navbar navbar-inverse" style="margin:0">
+  <div class="container-fluid" >
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
         <span class="icon-bar"></span>
@@ -73,19 +73,19 @@ box-shadow: 0px 0px 18px 9px rgba(0,0,0,0.75);
 		  </c:forEach>
          </ul>
         </li></c:if>
-        <li><a href="#">About Us</a></li>
-        <li><a href="#">Costumer Service</a></li>
-      </ul>
+        <li><a href="aboutUs">About Us</a></li>
+       </ul>
       <ul class="nav navbar-nav">
-      <li><a href="admin">Admin</a></li>
       </ul>
-      <sec:authentication var="user" property="principal"/>
       <ul class="nav navbar-nav navbar-right">
        <c:if test='<%=session.getAttribute("loggedin")==null%>'>
         <li><a href="register"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
         <li><a href="login"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
       </c:if>
       <c:if test='<%=session.getAttribute("loggedin")!=null%>'>
+      <sec:authentication var="user" property="principal"/>
+      <c:if test="${user.authorities=='[ROLE_ADMIN]'}">
+      <li><a href="admin">Admin</a></li></c:if>
         <li><a href="${e }cart">Cart</a></li>
         <li><a href="${e }orders">Orders</a></li>
                    <li><a>Welcome ${user.username}</a></li>

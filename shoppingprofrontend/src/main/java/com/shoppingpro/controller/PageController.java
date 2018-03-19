@@ -59,6 +59,10 @@ ProductDAO productDAO;
 	public String admin(){
 		return "admin";
 	}
+	@RequestMapping("/aboutUs")
+	public String aboutUs(){
+		return "aboutUs";
+	}
 	
 	@RequestMapping(value="/adduser",method=RequestMethod.POST)
 	public String adduser(@RequestParam Map<String,String>data){
@@ -80,4 +84,5 @@ ProductDAO productDAO;
 		m.addObject("proList",productDAO.getProductsByCategory(c_id));
 		return m;
 	}
+	
 }
